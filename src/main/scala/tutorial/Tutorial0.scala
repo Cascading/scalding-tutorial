@@ -25,7 +25,11 @@ To test it, from the science directory, first make sure you've built the target/
 from the base directory type:
   sbt assembly
 
+<<<<<<< HEAD
   hadoop jar target/scalding-tutorial-project-0.1.jar --local Tutorial0
+=======
+  hadoop jar target/scalding-tutorial-project-0.8.5.jar --local Tutorial0
+>>>>>>> change pathes in docs for new project structure
 
 You can check the input:
   cat data/hello.txt
