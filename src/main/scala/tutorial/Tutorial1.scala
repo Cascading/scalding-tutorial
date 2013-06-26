@@ -40,8 +40,8 @@ Check the output:
 
 class Tutorial1(args : Args) extends Job(args) {
 
-  val input = TextLine("tutorial/data/hello.txt")
-  val output = TextLine("tutorial/data/output1.txt")
+  val input = TextLine("data/hello.txt")
+  val output = TextLine("data/output1.txt")
 
   /**
   We generally write each step of the pipeline on a separate line.

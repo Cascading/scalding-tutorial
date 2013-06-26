@@ -40,9 +40,9 @@ class Tutorial6(args : Args) extends Job(args) {
 
   import Schema._
 
-  Csv("tutorial/data/phones.txt", separator = " ", fields = Schema)
+  Csv("data/phones.txt", separator = " ", fields = Schema)
     .read
     .project(first,age)
-    .write(Tsv("tutorial/data/output6.tsv"))
+    .write(Tsv("data/output6.tsv"))
 }
 

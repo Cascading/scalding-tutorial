@@ -45,7 +45,7 @@ class Tutorial3(args : Args) extends Job(args) {
   If it's missing, we'll get an error.
   **/
   val input = TextLine(args("input"))
-  val output = TextLine("tutorial/data/output3.txt")
+  val output = TextLine("data/output3.txt")
 
   input
     .read

@@ -56,8 +56,8 @@ class Tutorial0(args : Args) extends Job(args) {
   Scalding comes with some basic source types like TextLine and Tsv.
   There are also many twitter-specific types like MergedAdRequestSource.
   **/
-  val input = TextLine("tutorial/data/hello.txt")
-  val output = TextLine("tutorial/data/output0.txt")
+  val input = TextLine("data/hello.txt")
+  val output = TextLine("data/output0.txt")
 
   /**
   This is the minimal pipeline. Source.read returns a cascading.pipe.Pipe, which represents

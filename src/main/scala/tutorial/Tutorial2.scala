@@ -31,8 +31,8 @@ Check the output:
 
 class Tutorial2(args : Args) extends Job(args) {
 
-  val input = TextLine("tutorial/data/hello.txt")
-  val output = TextLine("tutorial/data/output2.txt")
+  val input = TextLine("data/hello.txt")
+  val output = TextLine("data/output2.txt")
 
   input
     .read
