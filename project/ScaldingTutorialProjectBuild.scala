@@ -13,7 +13,7 @@
 import sbt._
 import Keys._
 
-object ScaldingExampleProjectBuild extends Build {
+object ScaldingTutorialProjectBuild extends Build {
 
   import Dependencies._
   import BuildSettings._
@@ -24,7 +24,7 @@ object ScaldingExampleProjectBuild extends Build {
   }
 
   // Define our project, with basic project information and library dependencies
-  lazy val project = Project("scalding-example-project", file("."))
+  lazy val project = Project("scalding-tutorial-project", file("."))
     .settings(buildSettings: _*)
     .settings(
       libraryDependencies ++= Seq(
