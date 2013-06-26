@@ -25,14 +25,13 @@ To test it, from the science directory, first make sure you've built the target/
 from the base directory type:
   sbt assembly
 
-Now use the scald.rb script in local mode to run this job:
-  scripts/scald.rb --local tutorial/Tutorial0.scala
+  hadoop jar target/scalding-tutorial-project-0.8.5.jar --local Tutorial0
 
 You can check the input:
-  cat tutorial/data/hello.txt
+  cat data/hello.txt
 
 And the output:
-  cat tutorial/data/output0.txt
+  cat target/data/output0.txt
 
 The output should look just like the input, but with line numbers.
 More on this in part 1 of the tutorial.
@@ -57,7 +56,7 @@ class Tutorial0(args : Args) extends Job(args) {
   There are also many twitter-specific types like MergedAdRequestSource.
   **/
   val input = TextLine("data/hello.txt")
-  val output = TextLine("data/output0.txt")
+  val output = TextLine("target/output0.txt")
 
   /**
   This is the minimal pipeline. Source.read returns a cascading.pipe.Pipe, which represents

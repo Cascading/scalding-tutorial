@@ -22,17 +22,17 @@ In parts 0 and 1, we made copies of hello.txt. Now let's try to
 modify the copies by reversing each line.
 
 To run this job:
-  scripts/scald.rb --local tutorial/Tutorial2.scala
+  hadoop jar target/scalding-tutorial-project-0.8.5.jar --local Tutorial2
 
 Check the output:
-  cat tutorial/data/output2.txt
+  cat target/data/output2.txt
 
 **/
 
 class Tutorial2(args : Args) extends Job(args) {
 
   val input = TextLine("data/hello.txt")
-  val output = TextLine("data/output2.txt")
+  val output = TextLine("target/data/output2.txt")
 
   input
     .read

@@ -10,7 +10,8 @@ import com.twitter.scalding.mathematics.Matrix
 * Loads a directed graph adjacency matrix where a[i,j] = 1 if there is an edge from a[i] to b[j]
 * and computes the jaccard similarity between any two pairs of vectors
 * 
-* ../scripts/scald.rb --local MatrixTutorial5.scala --input data/graph.tsv --output data/jaccardSim.tsv
+* hadoop jar target/scalding-tutorial-project-0.8.5.jar --local MatrixTutorial5 \
+* --input data/graph.tsv --output target/data/jaccardSim.tsv
 *
 */
 

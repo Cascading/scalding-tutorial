@@ -31,17 +31,17 @@ project() method. When we refer to a data stream's fields, we use Scala symbols,
 like this: 'line.
 
 To run this job:
-  scripts/scald.rb --local tutorial/Tutorial1.scala
+  hadoop jar target/scalding-tutorial-project-0.8.5.jar --local Tutorial1
 
 Check the output:
-  cat tutorial/data/output1.txt
+  cat target/data/output1.txt
 
 **/
 
 class Tutorial1(args : Args) extends Job(args) {
 
   val input = TextLine("data/hello.txt")
-  val output = TextLine("data/output1.txt")
+  val output = TextLine("target/data/output1.txt")
 
   /**
   We generally write each step of the pipeline on a separate line.

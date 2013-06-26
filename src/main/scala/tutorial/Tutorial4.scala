@@ -24,13 +24,13 @@ Clearly we're ready for that most exciting of MapReduce examples, the word count
 Also, let's go ahead and make this fully general by parameterizing the output location.
 
 Run:
-  scripts/scald.rb \
+  hadoop jar scalding-tutorial-project-0.8.5.jar \
     --local tutorial/Tutorial4.scala \
-    --input tutorial/data/hello.txt \
-    --output tutorial/data/output4.txt
+    --input data/hello.txt \
+    --output target/data/output4.txt
 
 Check the output:
-  cat tutorial/data/output4.txt
+  cat target/data/output4.txt
 
 **/
 
