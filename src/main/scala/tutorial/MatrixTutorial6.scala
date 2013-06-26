@@ -1,5 +1,3 @@
-package com.twitter.scalding.examples
-
 import com.twitter.scalding._
 import com.twitter.scalding.mathematics.Matrix
 
@@ -15,7 +13,7 @@ import com.twitter.scalding.mathematics.Matrix
 *
 */
 
-class TfIdfJob(args : Args) extends Job(args) {
+class MatrixTutorial6(args : Args) extends Job(args) {
   
   import Matrix._
 

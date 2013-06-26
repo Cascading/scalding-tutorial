@@ -1,5 +1,3 @@
-package com.twitter.scalding.examples
-
 import com.twitter.scalding._
 import com.twitter.scalding.mathematics.Matrix
 
@@ -16,7 +14,7 @@ import com.twitter.scalding.mathematics.Matrix
 */
 
 
-class CofollowsJob(args : Args) extends Job(args) {
+class MatrixTutorial1(args : Args) extends Job(args) {
   
   import Matrix._
   
