@@ -20,7 +20,7 @@ object BuildSettings {
     organization  := "Concurrent Inc.",
     version       := "0.1",
     description   := "The scalding tutorial as an SBT project",
-    scalaVersion  := "2.9.2", // -> 2.10.0 when Scalding is ready
+    scalaVersion  := "2.10.0", // -> 2.10.0 when Scalding is ready
     scalacOptions := Seq("-deprecation", "-encoding", "utf8"),
     resolvers     ++= Dependencies.resolutionRepos
   )
