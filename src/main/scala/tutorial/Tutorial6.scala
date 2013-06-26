@@ -21,7 +21,7 @@ Scalding tutorial part 6.
 This is similar to Tutorial1 except that we show the use of Scala Enumerations to specify fields.
 
 To run this job:
-  scripts/scald.rb --local tutorial/Tutorial6.scala
+  hadoop jar target/scalding-tutorial-project-0.8.5.jar --local Tutorial6
 
 Check the output:
   cat tutorial/data/output6.tsv
@@ -43,6 +43,6 @@ class Tutorial6(args : Args) extends Job(args) {
   Csv("data/phones.txt", separator = " ", fields = Schema)
     .read
     .project(first,age)
-    .write(Tsv("data/output6.tsv"))
+    .write(Tsv("target/data/output6.tsv"))
 }
 
