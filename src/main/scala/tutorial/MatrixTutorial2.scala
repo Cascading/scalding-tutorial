@@ -9,8 +9,9 @@ import com.twitter.scalding.mathematics.Matrix
 * 
 * Loads a directed graph adjacency matrix where a[i,j] = 1 if there is an edge from a[i] to b[j]
 * and returns a graph containing only the nodes with outdegree smaller than a given value
-*
-* ../scripts/scald.rb --local MatrixTutorial2.scala --input data/graph.tsv --maxOutdegree 1000 --output data/graphFiltered.tsv
+* 
+* hadoop jar target/scalding-tutorial-project-0.8.5.jar --local MatrixTutorial2 \
+* --input data/graph.tsv --maxOutdegree 1000 --output target/data/graphFiltered.tsv
 * 
 */
 
