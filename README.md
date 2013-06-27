@@ -1,99 +1,53 @@
-# Scalding Example Project [![Build Status](https://travis-ci.org/snowplow/scalding-example-project.png)](https://travis-ci.org/snowplow/scalding-example-project)
+# Scalding Tutorial Project 
 
 ## Introduction
 
-This is Twitter's [`WordCountJob`] [wordcount] example for [Scalding] [scalding] adapted to run on Hadoop as a standalone job - i.e. without requiring `scald.rb` etc.
+This is Twitter's [tutorial] [tutorial] for [Scalding] [scalding] adapted to run
+on Hadoop as a standalone job - i.e. without requiring `scald.rb` etc.
 
-This was built as a Scala SBT project by the [Snowplow Analytics] [snowplow] team, as a proof of concept for porting our ETL process to Scalding to run on [Amazon Elastic MapReduce] [emr].
+This was built as a Scala SBT project by the [Concurrent Inc] [concurrent] team,
+in order to integrate the scalding tutorial into the [Cascading SDK][sdk].  It
+is based on the excellent work done by [Snowplow Analytics][snowplow] for
+porting the [`Wordcount example`][wordcount] to SBT. 
 
-For a much fuller Scalding example, see the Snowplow [Hadoop ETL] [snowplow-hadoop-etl] project.
+The versioning of the project follows the versions of the scalding release on
+which it is based.
+
+Please note that this tutorial uses scala 2.10 and not 2.9.
 
 ## Building
 
 Assuming you already have SBT installed:
 
-    $ git clone git://github.com/snowplow/scalding-example-project.git
-    $ cd scalding-example-project
+    $ git clone git://github.com/fs111/scalding-tutorial-project.git
+    $ cd scalding-tutorial-project
     $ sbt assembly
 
 The 'fat jar' is now available as:
 
-    target/scalding-example-project-0.0.4.jar
+    target/scalding-tutorial-project-0.8.5.jar
 
-## Unit testing
+## Project structure
 
-The `assembly` command above runs the test suite - but you can also run this manually with:
+Some modifications have been done to the code, order to properly work in an SBT
+based build.
 
-    $ sbt test
-    <snip>
-    [info] + A WordCount job should
-	[info]   + count words correctly
-	[info] Passed: : Total 2, Failed 0, Errors 0, Passed 2, Skipped 0
+* the code is now in `src/main/scala/tutorial`
+* the data files for the different parts lives now in `data`
+* the classes in the matrix tutorial have been renamed to match the file names,
+  so that the commandline invocation is similar to the original tutorial
+* the documentation of the examples have been adapted to match the new structure
 
-## Running on Amazon EMR
+## Running the examples
 
-### Prepare
+Each part of the tutorial explains, how to run it properly. However the general
+way is always
 
-Assuming you have already assembled the jarfile (see above), now upload the jar to Amazon S3.
-
-Next, upload the data file [`data/hello.txt`] [hello-txt] to S3.
-
-### Run
-
-Finally, you are ready to run this job using the [Amazon Ruby EMR client] [emr-client]:
-
-    $ elastic-mapreduce --create --name "scalding-example-project" \
-      --jar s3n://{{JAR_BUCKET}}/scalding-example-project-0.0.4.jar \
-      --arg com.snowplowanalytics.hadoop.scalding.WordCountJob \
-      --arg --hdfs \
-      --arg --input --arg s3n://{{IN_BUCKET}}/hello.txt \
-      --arg --output --arg s3n://{{OUT_BUCKET}}/results
-
-Replace `{{JAR_BUCKET}}`, `{{IN_BUCKET}}` and `{{OUT_BUCKET}}` with the appropriate paths.
-
-### Inspect
-
-Once the output has completed, you should see a folder structure like this in your output bucket:
-
-     results
-     |
-     +- _SUCCESS
-     +- part-00000
-
-Download the `part-00000` file and check that it contains:
-
-	goodbye	1
-	hello	1
-	world	2
-
-## Running on your own Hadoop cluster
-
-If you are trying to run this on a non-Amazon EMR environment, you may need to edit:
-
-    project/BuildSettings.scala
-
-And comment out the Hadoop jar exclusions:
-
-    // "hadoop-core-0.20.2.jar", // Provided by Amazon EMR. Delete this line if you're not on EMR
-    // "hadoop-tools-0.20.2.jar" // "
-
-## Next steps
-
-Fork this project and adapt it into your own custom Scalding job.
-
-To invoke/schedule your Scalding job on EMR, check out:
-
-* [Spark Plug] [spark-plug] for Scala
-* [Elasticity] [elasticity] for Ruby
-* [Boto] [boto] for Python
-
-## Roadmap
-
-Nothing planned currently.
+    $ hadoop target/scalding-tutorial-project-0.8.5.jar <TutorialPart> --local <addtional arguments>
 
 ## Copyright and license
 
-Copyright 2012-2013 Snowplow Analytics Ltd, with significant portions copyright 2012 Twitter, Inc.
+Copyright 2012-2013 Concurrent Inc, with significant portions copyright 2012 Twitter, Inc. and Snowplow Analytics Inc.
 
 Licensed under the [Apache License, Version 2.0] [license] (the "License");
 you may not use this software except in compliance with the License.
@@ -104,14 +58,10 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[wordcount]: https://github.com/twitter/scalding/blob/master/README.md
+[tutorial]: https://github.com/twitter/scalding/tree/develop/tutorial
+[sdk]: http://cascading.org/sdk
 [scalding]: https://github.com/twitter/scalding/
+[concurrent]: http://concurrentinc.com
 [snowplow]: http://snowplowanalytics.com
-[snowplow-hadoop-etl]: https://github.com/snowplow/snowplow/tree/master/3-enrich/hadoop-etl
-[emr]: http://aws.amazon.com/elasticmapreduce/
-[hello-txt]: https://github.com/snowplow/scalding-example-project/raw/master/data/hello.txt
-[emr-client]: http://aws.amazon.com/developertools/2264
-[elasticity]: https://github.com/rslifka/elasticity
-[spark-plug]: https://github.com/ogrodnek
-[boto]: http://boto.readthedocs.org/en/latest/ref/emr.html
+[wordcount]: http//github.com/snowplow/scalding-example-project 
 [license]: http://www.apache.org/licenses/LICENSE-2.0
