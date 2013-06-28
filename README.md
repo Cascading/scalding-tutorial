@@ -43,7 +43,7 @@ based build.
 Each part of the tutorial explains, how to run it properly. However the general
 way is always
 
-    $ hadoop target/scalding-tutorial-0.8.5.jar <TutorialPart> --local <addtional arguments>
+    $ hadoop jar target/scalding-tutorial-0.8.5.jar <TutorialPart> --local <addtional arguments>
 
 ## Copyright and license
 
