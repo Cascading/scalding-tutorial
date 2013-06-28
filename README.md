@@ -19,7 +19,7 @@ Please note that this tutorial uses scala 2.10 and not 2.9.
 
 Assuming you already have SBT installed:
 
-    $ git clone git://github.com/fs111/scalding-tutorial-project.git
+    $ git clone git://github.com/Cascading/scalding-tutorial.git
     $ cd scalding-tutorial-project
     $ sbt assembly
 
