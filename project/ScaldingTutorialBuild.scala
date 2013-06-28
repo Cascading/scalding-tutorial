@@ -24,7 +24,7 @@ object ScaldingTutorialProjectBuild extends Build {
   }
 
   // Define our project, with basic project information and library dependencies
-  lazy val project = Project("scalding-tutorial-project", file("."))
+  lazy val project = Project("scalding-tutorial", file("."))
     .settings(buildSettings: _*)
     .settings(
       libraryDependencies ++= Seq(

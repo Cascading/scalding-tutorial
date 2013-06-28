@@ -31,7 +31,7 @@ with the words input file to get their individual ranks, then
 group by line to get a total score and output each line/score pair.
 
 Run:
-  hadoop jar target/scalding-tutorial-project-0.8.5.jar \
+  hadoop jar target/scalding-tutorial-0.8.5.jar \
     --local Tutorial5 \
     --input data/hello.txt \
     --output target/data/output5.txt \

@@ -21,7 +21,7 @@ Scalding tutorial part 6.
 This is similar to Tutorial1 except that we show the use of Scala Enumerations to specify fields.
 
 To run this job:
-  hadoop jar target/scalding-tutorial-project-0.8.5.jar --local Tutorial6
+  hadoop jar target/scalding-tutorial-0.8.5.jar --local Tutorial6
 
 Check the output:
   cat tutorial/data/output6.tsv

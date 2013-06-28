@@ -21,7 +21,7 @@ Scalding tutorial part 3.
 So far, we've been hardcoding the input file. Let's make that an argument,
 which changes how we run the job:
 
-  hadoop jar target/scalding-tutorial-project-0.8.5.jar \
+  hadoop jar target/scalding-tutorial-0.8.5.jar \
     --local Tutorial3 \
     --input data/hello.txt
 

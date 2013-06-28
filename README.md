@@ -20,12 +20,12 @@ Please note that this tutorial uses scala 2.10 and not 2.9.
 Assuming you already have SBT installed:
 
     $ git clone git://github.com/Cascading/scalding-tutorial.git
-    $ cd scalding-tutorial-project
+    $ cd scalding-tutorial
     $ sbt assembly
 
 The 'fat jar' is now available as:
 
-    target/scalding-tutorial-project-0.8.5.jar
+    target/scalding-tutorial-0.8.5.jar
 
 ## Project structure
 
@@ -43,7 +43,7 @@ based build.
 Each part of the tutorial explains, how to run it properly. However the general
 way is always
 
-    $ hadoop target/scalding-tutorial-project-0.8.5.jar <TutorialPart> --local <addtional arguments>
+    $ hadoop target/scalding-tutorial-0.8.5.jar <TutorialPart> --local <addtional arguments>
 
 ## Copyright and license
 
