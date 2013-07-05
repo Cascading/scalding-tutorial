@@ -28,6 +28,9 @@ object ScaldingTutorialProjectBuild extends Build {
     .settings(buildSettings: _*)
     .settings(
       libraryDependencies ++= Seq(
+        Libraries.cascadingCore,
+        Libraries.cascadingLocal,
+        Libraries.cascadingHadoop,
         Libraries.scaldingCore,
         Libraries.hadoopCore,
         Libraries.specs2

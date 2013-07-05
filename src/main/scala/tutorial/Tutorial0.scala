@@ -25,7 +25,7 @@ To test it, from the science directory, first make sure you've built the target/
 from the base directory type:
   sbt assembly
 
-  hadoop jar target/scalding-tutorial-0.8.5.jar --local Tutorial0
+  hadoop jar target/scalding-tutorial-0.8.6.jar --local Tutorial0
 
 You can check the input:
   cat data/hello.txt

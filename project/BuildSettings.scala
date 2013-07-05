@@ -18,7 +18,7 @@ object BuildSettings {
   // Basic settings for our app
   lazy val basicSettings = Seq[Setting[_]](
     organization  := "Concurrent Inc.",
-    version       := "0.8.5", // -> follow the release numbers of scalding
+    version       := "0.8.6", // -> follow the release numbers of scalding
     description   := "The scalding tutorial as an SBT project",
     scalaVersion  := "2.10.0", // -> 2.10.0 when Scalding is ready
     scalacOptions := Seq("-deprecation", "-encoding", "utf8"),
@@ -43,7 +43,7 @@ object BuildSettings {
         "janino-2.5.16.jar", // Janino includes a broken signature, and is not needed anyway
         "commons-beanutils-core-1.8.0.jar", // Clash with each other and with commons-collections
         "commons-beanutils-1.7.0.jar",      // "
-        "hadoop-core-1.1.2.jar", // Provided by Amazon EMR. Delete this line if you're not on EMR
+        "hadoop-core-1.1.2.jar", 
         "hadoop-tools-1.1.2.jar" // "
       ) 
       cp filter { jar => excludes(jar.data.getName) }
