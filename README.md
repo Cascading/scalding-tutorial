@@ -36,7 +36,7 @@ Assuming you already have SBT installed:
 
 The 'fat jar' is now available as:
 
-    target/scalding-tutorial-0.8.6.jar
+    target/scalding-tutorial-0.8.8.jar
 
 ## Project structure
 
@@ -54,7 +54,7 @@ based build.
 Each part of the tutorial explains, how to run it properly. However the general
 way is always
 
-    $ hadoop jar target/scalding-tutorial-0.8.6.jar <TutorialPart> --local <addtional arguments>
+    $ hadoop jar target/scalding-tutorial-0.8.8.jar <TutorialPart> --local <addtional arguments>
 
 ## Copyright and license
 

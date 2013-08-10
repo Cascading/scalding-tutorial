@@ -7,7 +7,7 @@ import com.twitter.scalding.mathematics.Matrix
 * Loads a directed graph adjacency matrix where a[i,j] = 1 if there is an edge from a[i] to b[j]
 * and compute the outdegree of each node i
 *
-* hadoop jar target/scalding-tutorial-0.8.6.jar --local MatrixTutorial0 \
+* hadoop jar target/scalding-tutorial-0.8.8.jar MatrixTutorial0 --local\
 * --input data/graph.tsv \
 * --output target/data/outdegree.tsv
 *

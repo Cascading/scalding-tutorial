@@ -8,7 +8,7 @@ import com.twitter.scalding.mathematics.Matrix
 * Loads a directed graph adjacency matrix where a[i,j] = 1 if there is an edge from a[i] to b[j]
 * and compute the co-follows between any two nodes 
 *
-* hadoop jar target/scalding-tutorial-0.8.6.jar --local MatrixTutorial1 \
+* hadoop jar target/scalding-tutorial-0.8.8.jar MatrixTutorial1 --local\
 * --input data/graph.tsv --output target/data/cofollows.tsv
 *
 */
