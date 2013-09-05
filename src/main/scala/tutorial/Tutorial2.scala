@@ -22,7 +22,7 @@ In parts 0 and 1, we made copies of hello.txt. Now let's try to
 modify the copies by reversing each line.
 
 To run this job:
-  hadoop jar target/scalding-tutorial-0.8.8.jar Tutorial2 --local
+  hadoop jar target/scalding-tutorial-0.8.11.jar Tutorial2 --local
 
 Check the output:
   cat target/data/output2.txt

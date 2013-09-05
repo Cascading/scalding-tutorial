@@ -19,7 +19,7 @@ object Dependencies {
   )
 
   object V {
-    val scalding  = "0.8.8"
+    val scalding  = "0.8.11"
     val hadoop    = "1.1.2"
     val specs2    = "1.13" // -> "1.13" when we bump to Scala 2.10.0
     // Add versions for your additional libraries here...

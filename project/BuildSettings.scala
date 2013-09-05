@@ -18,9 +18,9 @@ object BuildSettings {
   // Basic settings for our app
   lazy val basicSettings = Seq[Setting[_]](
     organization  := "Concurrent Inc.",
-    version       := "0.8.8", // -> follow the release numbers of scalding
+    version       := "0.8.11", // -> follow the release numbers of scalding
     description   := "The scalding tutorial as an SBT project",
-    scalaVersion  := "2.10.0", // -> 2.10.0 when Scalding is ready
+    scalaVersion  := "2.10.0", 
     scalacOptions := Seq("-deprecation", "-encoding", "utf8"),
     resolvers     ++= Dependencies.resolutionRepos
   )

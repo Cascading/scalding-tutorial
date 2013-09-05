@@ -8,7 +8,7 @@ import com.twitter.scalding.mathematics.Matrix
 * Loads two directed graph adjacency matrices where a[i,j] = 1 if there is an edge from a[i] to b[j]
 * and computes the intersection and the differences between the two
 * 
-* hadoop jar target/scalding-tutorial-0.8.8.jar MatrixTutorial3 --local\
+* hadoop jar target/scalding-tutorial-0.8.11.jar MatrixTutorial3 --local\
 * --input1 data/graph.tsv --input2 data/graph2.tsv --intersection data/intersection.tsv --leftDiff target/data/leftDiff.tsv --rightDiff target/data/rightDiff.tsv
 *
 */

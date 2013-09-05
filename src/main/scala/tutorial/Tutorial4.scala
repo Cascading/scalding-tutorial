@@ -24,7 +24,7 @@ Clearly we're ready for that most exciting of MapReduce examples, the word count
 Also, let's go ahead and make this fully general by parameterizing the output location.
 
 Run:
-  hadoop jar scalding-tutorial-0.8.8.jar \
+  hadoop jar scalding-tutorial-0.8.11.jar \
     tutorial/Tutorial4.scala --local\
     --input data/hello.txt \
     --output target/data/output4.txt
