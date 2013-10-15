@@ -32,8 +32,8 @@ Check the output:
 
 You can also of course try this with other input parameters. For example:
 
-  hadoop jar target/scalding-tutorial-project-0.8.5.jar \
-    --local Tutorial3 \
+  hadoop jar target/scalding-tutorial-0.8.11.jar \
+    Tutorial3 --local\
     --input target/data/output2.txt
 
 **/
@@ -64,7 +64,7 @@ class Tutorial3(args : Args) extends Job(args) {
     write() returns the pipe, so we can keep chaining our pipeline.
     **/
 
-    .write(Tsv("tutorial/data/tmp3.tsv"))
+    .write(Tsv("target/data/tmp3.tsv"))
     .project('word)
     .write(output)
 }
