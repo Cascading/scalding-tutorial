@@ -7,9 +7,9 @@ import com.twitter.scalding.mathematics.Matrix
 * Loads a document to word matrix where a[i,j] = freq of the word j in the document i 
 * computes the Tf-Idf score of each word w.r.t. to each document and keeps the top nrWords in each document
 * (see http://en.wikipedia.org/wiki/Tf*idf for more info)
-* 
-* hadoop jar target/scalding-tutorial-0.8.11.jar MatrixTutorial6 --local\
-* --input data/docBOW.tsv --nrWords 300 --output target/data/featSelectedMatrix.tsv
+*
+  hadoop jar target/scalding-tutorial-0.8.11.jar MatrixTutorial6 --local\
+    --input data/docBOW.tsv --nrWords 300 --output target/data/featSelectedMatrix.tsv
 *
 */
 
