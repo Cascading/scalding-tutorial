@@ -56,7 +56,7 @@ class Tutorial0(args : Args) extends Job(args) {
   There are also many twitter-specific types like MergedAdRequestSource.
   **/
   val input = TextLine("data/hello.txt")
-  val output = TextLine("target/output0.txt")
+  val output = TextLine("target/data/output0.txt")
 
   /**
   This is the minimal pipeline. Source.read returns a cascading.pipe.Pipe, which represents
