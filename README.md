@@ -54,11 +54,11 @@ based build.
 Each part of the tutorial explains, how to run it properly. However the general
 way is always
 
-    $ hadoop jar target/scalding-tutorial-0.8.11.jar <TutorialPart> --local <addtional arguments>
+    $ yarn jar target/scalding-tutorial-0.8.11.jar <TutorialPart> --local <addtional arguments>
 
 ## Copyright and license
 
-Copyright 2012-2013 Concurrent Inc, with significant portions copyright 2012 Twitter, Inc. and Snowplow Analytics Inc.
+Copyright 2012-2014 Concurrent Inc, with significant portions copyright 2012 Twitter, Inc. and Snowplow Analytics Inc.
 
 Licensed under the [Apache License, Version 2.0] [license] (the "License");
 you may not use this software except in compliance with the License.
