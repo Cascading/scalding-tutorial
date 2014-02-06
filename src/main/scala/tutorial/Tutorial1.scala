@@ -31,7 +31,7 @@ project() method. When we refer to a data stream's fields, we use Scala symbols,
 like this: 'line.
 
 To run this job:
-  hadoop jar target/scalding-tutorial-0.8.11.jar Tutorial1 --local
+  yarn jar target/scalding-tutorial-0.8.11.jar Tutorial1 --local
 
 Check the output:
   cat target/data/output1.txt
