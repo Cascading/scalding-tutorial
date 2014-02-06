@@ -33,7 +33,6 @@ object ScaldingTutorialProjectBuild extends Build {
         Libraries.cascadingHadoop,
         Libraries.scaldingCore,
         Libraries.hadoopCore,
-        Libraries.hadoopClientCore,
         Libraries.specs2
         // Add your additional libraries here (comma-separated)...
       )
