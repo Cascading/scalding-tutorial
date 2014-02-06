@@ -25,7 +25,7 @@ To test it, from the science directory, first make sure you've built the target/
 from the base directory type:
   sbt assembly
 
-  yarn jar target/scalding-tutorial-0.8.11.jar Tutorial0 --local
+  hadoop jar target/scalding-tutorial-0.8.11.jar Tutorial0 --local
 
 You can check the input:
   cat data/hello.txt
@@ -56,7 +56,7 @@ class Tutorial0(args : Args) extends Job(args) {
   There are also many twitter-specific types like MergedAdRequestSource.
   **/
   val input = TextLine("data/hello.txt")
-  val output = TextLine("target/data/output0.txt")
+  val output = TextLine("target/output0.txt")
 
   /**
   This is the minimal pipeline. Source.read returns a cascading.pipe.Pipe, which represents
