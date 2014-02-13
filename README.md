@@ -1,4 +1,4 @@
-# Scalding Tutorial Project 
+# Scalding Tutorial Project
 
 ## Introduction
 
@@ -8,7 +8,7 @@ on Hadoop as a standalone job - i.e. without requiring `scald.rb` etc.
 This was built as a Scala SBT project by the [Concurrent Inc] [concurrent] team,
 in order to integrate the scalding tutorial into the [Cascading SDK][sdk].  It
 is based on the excellent work done by [Snowplow Analytics][snowplow] for
-porting the [`Wordcount example`][wordcount] to SBT. 
+porting the [`Wordcount example`][wordcount] to SBT.
 
 The versioning of the project follows the versions of the scalding release on
 which it is based.
@@ -20,7 +20,7 @@ Please note that this tutorial uses scala 2.10 and not 2.9.
 In order to use this tutorial, you need to have `SBT` and the `hadoop` command
 installed. Cascading and therefore scalding is compatible with a number of
 hadoop distributions. If you are unsure, if your distribution is compatible,
-please check the [compatibility][compatibility] page. 
+please check the [compatibility][compatibility] page.
 
 You do not need to have a full hadoop cluster, in order to run this tutorial.
 The local mode of hadoop is sufficient.
@@ -54,11 +54,14 @@ based build.
 Each part of the tutorial explains, how to run it properly. However the general
 way is always
 
-    $ hadoop jar target/scalding-tutorial-0.8.11.jar <TutorialPart> --local <addtional arguments>
+    $ yarn jar target/scalding-tutorial-0.8.11.jar <TutorialPart> --local <addtional arguments>
+
+If you want to run the examples on a Hadoop clsuter, replace `--local` with
+`--hdfs`.
 
 ## Copyright and license
 
-Copyright 2012-2013 Concurrent Inc, with significant portions copyright 2012 Twitter, Inc. and Snowplow Analytics Inc.
+Copyright 2012-2014 Concurrent Inc, with significant portions copyright 2012 Twitter, Inc. and Snowplow Analytics Inc.
 
 Licensed under the [Apache License, Version 2.0] [license] (the "License");
 you may not use this software except in compliance with the License.
@@ -74,6 +77,6 @@ limitations under the License.
 [scalding]: https://github.com/twitter/scalding/
 [concurrent]: http://concurrentinc.com
 [snowplow]: http://snowplowanalytics.com
-[wordcount]: http://github.com/snowplow/scalding-example-project 
+[wordcount]: http://github.com/snowplow/scalding-example-project
 [license]: http://www.apache.org/licenses/LICENSE-2.0
 [compatibility]: http://www.cascading.org/support/compatibility/
