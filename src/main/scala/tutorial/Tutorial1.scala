@@ -23,7 +23,7 @@ it was annotated with line numbers.
 
 That's because the data stream coming out of a TextLine source actually
 has two fields: one, called "line", has the actual line of text. The other,
-called "num", has the line number in the file. When you write these
+called "offset", has the line number in the file. When you write these
 tuples to a TextLine, it naively outputs them both on each line.
 
 We can ask scalding to select just the "line" field from the pipe, using the
