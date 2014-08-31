@@ -51,7 +51,7 @@ class Tutorial5(args : Args) extends Job(args) {
   We'll start with the dict data source.
 
   When we join, we'll need unique field names, so we'll rename
-  the 'num field to be 'score. Also, we want to normalize
+  the 'offset field to be 'score. Also, we want to normalize
   the words to be lowercase.
   **/
 
