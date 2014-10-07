@@ -19,11 +19,11 @@ object Dependencies {
   )
 
   object V {
-    val scalding  = "0.8.11"
-    val hadoop    = "2.2.0"
+    val scalding  = "0.11.2"
+    val hadoop    = "2.4.1"
     val specs2    = "1.13" // -> "1.13" when we bump to Scala 2.10.0
     // Add versions for your additional libraries here...
-    val cascading = "2.5.2"
+    val cascading = "2.6.0-+"
   }
 
   object Libraries {
@@ -31,6 +31,8 @@ object Dependencies {
     val cascadingLocal = "cascading"                %  "cascading-local"       % V.cascading
     val cascadingHadoop = "cascading"                %  "cascading-hadoop2-mr1"       % V.cascading
     val scaldingCore = "com.twitter"                %%  "scalding-core"       % V.scalding exclude( "cascading", "cascading-local" ) exclude( "cascading", "cascading-hadoop" )
+    val scaldingJson = "com.twitter"                %%  "scalding-json"       % V.scalding exclude( "cascading", "cascading-local" ) exclude( "cascading", "cascading-hadoop" )
+    val scaldingAvro = "com.twitter"                %%  "scalding-avro"       % V.scalding exclude( "cascading", "cascading-local" ) exclude( "cascading", "cascading-hadoop" )
     val hadoopCore   = "org.apache.hadoop"          % "hadoop-common"           % V.hadoop       % "provided"
     val hadoopClientCore   = "org.apache.hadoop"          % "hadoop-mapreduce-client-core"           % V.hadoop       % "provided"
     // Add additional libraries from mvnrepository.com (SBT syntax) here...

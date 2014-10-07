@@ -31,7 +31,7 @@ with the words input file to get their individual ranks, then
 group by line to get a total score and output each line/score pair.
 
 Run:
-  yarn jar target/scalding-tutorial-0.8.11.jar \
+  yarn jar target/scalding-tutorial-0.11.2.jar \
     Tutorial5 --local\
     --input data/hello.txt \
     --output target/data/output5.txt \
@@ -51,7 +51,7 @@ class Tutorial5(args : Args) extends Job(args) {
   We'll start with the dict data source.
 
   When we join, we'll need unique field names, so we'll rename
-  the 'num field to be 'score. Also, we want to normalize
+  the 'offset' field to be score. Also, we want to normalize
   the words to be lowercase.
   **/
 
@@ -81,6 +81,6 @@ class Tutorial5(args : Args) extends Job(args) {
     provides; we just need to specify which field to sum by.
     **/
 
-    .groupBy('line){group => group.sum('score)}
+    .groupBy('line){group => group.sum[Double]('score)}
     .write(Tsv(args("output")))
 }

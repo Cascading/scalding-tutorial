@@ -32,6 +32,8 @@ object ScaldingTutorialProjectBuild extends Build {
         Libraries.cascadingLocal,
         Libraries.cascadingHadoop,
         Libraries.scaldingCore,
+        Libraries.scaldingJson,
+        Libraries.scaldingAvro,
         Libraries.hadoopCore,
         Libraries.hadoopClientCore,
         Libraries.specs2
