@@ -23,7 +23,7 @@ object Dependencies {
     val hadoop    = "2.4.1"
     val specs2    = "1.13" // -> "1.13" when we bump to Scala 2.10.0
     // Add versions for your additional libraries here...
-    val cascading = "2.6.0-+"
+    val cascading = "2.6.0"
   }
 
   object Libraries {
