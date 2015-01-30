@@ -24,7 +24,7 @@ To run this job:
   yarn jar target/scalding-tutorial-0.11.2.jar Tutorial6 --local 
 
 Check the output:
-  cat tutorial/data/output6.tsv
+  cat target/data/output6.tsv
 
 **/
 
