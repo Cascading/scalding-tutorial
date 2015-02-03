@@ -10,7 +10,7 @@ These tutorials are all run from this single file; which one is run can
 be chosen with a command-line flag "--tutorial". For instance, to run the
 first tutorial example:
 
-yarn jar target/scalding-tutorial-0.11.2.jar TypedTutorial --local \
+yarn jar target/scalding-tutorial-0.13.0.jar TypedTutorial --local \
       --tutorial 0 \
       --input data/hello.txt \
       --output target/data/output0.txt \

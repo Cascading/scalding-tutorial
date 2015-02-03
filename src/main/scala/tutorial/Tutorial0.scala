@@ -25,7 +25,7 @@ To test it, from the science directory, first make sure you've built the target/
 from the base directory type:
   sbt assembly
 
-  yarn jar target/scalding-tutorial-0.11.2.jar Tutorial0 --local
+  yarn jar target/scalding-tutorial-0.13.0.jar Tutorial0 --local
 
 You can check the input:
   cat data/hello.txt
