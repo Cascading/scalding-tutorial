@@ -8,7 +8,7 @@ import com.twitter.scalding.mathematics.Matrix
 * Loads a directed graph adjacency matrix where a[i,j] = 1 if there is an edge from a[i] to b[j]
 * and computes the cosine of the angle between every two pairs of vectors
 * 
-  yarn jar target/scalding-tutorial-0.11.2.jar MatrixTutorial4 --local\
+  yarn jar target/scalding-tutorial-0.13.0.jar MatrixTutorial4 --local\
     --input data/graph.tsv --output target/data/cosineSim.tsv
 *
 */

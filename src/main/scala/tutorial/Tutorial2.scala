@@ -22,7 +22,7 @@ In parts 0 and 1, we made copies of hello.txt. Now let's try to
 modify the copies by reversing each line.
 
 To run this job:
-  yarn jar target/scalding-tutorial-0.11.2.jar Tutorial2 --local
+  yarn jar target/scalding-tutorial-0.13.0.jar Tutorial2 --local
 
 Check the output:
   cat target/data/output2.txt
