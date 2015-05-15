@@ -21,7 +21,7 @@ Scalding tutorial part 3.
 So far, we've been hardcoding the input file. Let's make that an argument,
 which changes how we run the job:
 
-  yarn jar target/scalding-tutorial-0.13.0.jar \
+  yarn jar target/scalding-tutorial-0.13.1.jar \
     Tutorial3 --local\
     --input data/hello.txt
 
@@ -32,7 +32,7 @@ Check the output:
 
 You can also of course try this with other input parameters. For example:
 
-  yarn jar target/scalding-tutorial-0.13.0.jar \
+  yarn jar target/scalding-tutorial-0.13.1.jar \
     Tutorial3 --local\
     --input target/data/output2.txt
 

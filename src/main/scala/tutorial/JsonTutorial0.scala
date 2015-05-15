@@ -2,7 +2,7 @@
 Scalding with Json tutorial part 0.
 
 To run this job:
-  yarn jar target/scalding-tutorial-0.13.0.jar JsonTutorial0 --local --json
+  yarn jar target/scalding-tutorial-0.13.1.jar JsonTutorial0 --local --json
 
 Check the output:
   cat target/data/jsonoutput0.tsv

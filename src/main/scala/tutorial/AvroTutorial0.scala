@@ -2,7 +2,7 @@
 Scalding with Avro (and Json) tutorial part 0.
 
 To run this job:
-   yarn jar target/scalding-tutorial-0.13.0.jar AvroTutorial0 --local --avro --json
+   yarn jar target/scalding-tutorial-0.13.1.jar AvroTutorial0 --local --avro --json
 
 Check the output:
   java -jar avro-tools-1.7.6.jar tojson tutorial/data/avrooutput0.avro
