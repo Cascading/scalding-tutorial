@@ -36,7 +36,7 @@ Assuming you already have SBT installed:
 
 The 'fat jar' is now available as:
 
-    target/scalding-tutorial-0.13.1.jar
+    target/scalding-tutorial-0.14.0.jar
 
 ## Project structure
 
@@ -54,7 +54,7 @@ based build.
 Each part of the tutorial explains, how to run it properly. However the general
 way is always
 
-    $ yarn jar target/scalding-tutorial-0.13.1.jar <TutorialPart> --local <addtional arguments>
+    $ yarn jar target/scalding-tutorial-0.14.0.jar <TutorialPart> --local <addtional arguments>
 
 ## Copyright and license
 

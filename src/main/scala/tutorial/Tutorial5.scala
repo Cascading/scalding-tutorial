@@ -31,7 +31,7 @@ with the words input file to get their individual ranks, then
 group by line to get a total score and output each line/score pair.
 
 Run:
-  yarn jar target/scalding-tutorial-0.13.1.jar \
+  yarn jar target/scalding-tutorial-0.14.0.jar \
     Tutorial5 --local\
     --input data/hello.txt \
     --output target/data/output5.txt \

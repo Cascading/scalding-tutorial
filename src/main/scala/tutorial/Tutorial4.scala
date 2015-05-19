@@ -24,7 +24,7 @@ Clearly we're ready for that most exciting of MapReduce examples, the word count
 Also, let's go ahead and make this fully general by parameterizing the output location.
 
 Run:
-  yarn jar target/scalding-tutorial-0.13.1.jar \
+  yarn jar target/scalding-tutorial-0.14.0.jar \
     Tutorial4 --local\
     --input data/hello.txt \
     --output target/data/output4.txt
